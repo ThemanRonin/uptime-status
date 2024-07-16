@@ -6,7 +6,7 @@ window.Config = {
   // UptimeRobot API Keys
   // 支持Monitor-Specific API Keys和Read-Only API Key，推荐使用Read-Only API Key，可填写多个
   ApiKeys: [
-    'ur1884169-f2ddd4677953551305552673',
+    'ur2617078-5e858edf957dc625312a3946',
   ],
 
   // 日志天数，建议90
@@ -21,6 +21,10 @@ window.Config = {
       text: '个人主页',
       url: 'https://domain.zgqinc.gq/'
     },
+    {
+      text: '小众软件',
+      url: 'https://meta.appinn.net/'
+    },    
     {
       text: '项目地址',
       url: 'https://github.com/ZGQ-inc/uptime-status'
