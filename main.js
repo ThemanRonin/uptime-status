@@ -9780,7 +9780,7 @@ function() {
                     })
                 })
             },
-            xn = "2.0.0";
+            xn = "";
         var _n = function() {
                 var t = (0, e.useMemo)((function() {
                     var e = window.Config.ApiKeys;
