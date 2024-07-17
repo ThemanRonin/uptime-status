@@ -9799,18 +9799,18 @@ function() {
                         }), (0, i.jsxs)("div", {
                             id: "footer",
                             children: [(0, i.jsxs)("p", {
-                                children: ["\u57fa\u4e8e\xa0", (0, i.jsx)(l, {
-                                    to: "https://uptimerobot.com/",
-                                    text: "UptimeRobot"
-                                }), "\xa0\u63a5\u53e3\xa0|\xa0\u68c0\u6d4b\u9891\u7387\xa05\xa0\u5206\u949f"]
+                                children: ["", (0, i.jsx)(l, {
+                                    to: "",
+                                    text: ""
+                                }), ""]
                             }), (0, i.jsxs)("p", {
-                                children: ["Copyright\xa0\xa9\xa02022", (0, i.jsx)(l, {
-                                    to: "https://domain.zgqinc.gq/",
-                                    text: "\xa0ZGQ\xa0Inc."
-                                }), "\xa0|\xa0Powered by\xa0", (0, i.jsx)(l, {
-                                    to: "https://github.com/yb/uptime-status",
-                                    text: "uptime-status"
-                                }), "\xa0", xn]
+                                children: ["", (0, i.jsx)(l, {
+                                    to: "",
+                                    text: ""
+                                }), "", (0, i.jsx)(l, {
+                                    to: "",
+                                    text: ""
+                                }), "", xn]
                             })]
                         })]
                     })]
