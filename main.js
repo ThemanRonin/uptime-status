@@ -7859,49 +7859,62 @@ function() {
                     children: e.text
                 }))
             };
-        var u = function() {
-                return (0, e.useEffect)((function() {
-                    document.title = window.Config.SiteName
-                }), []), (0, i.jsxs)("div", {
-                    id: "header",
-                    children: [(0, i.jsxs)("div", {
-                        className: "container",
-                        children: [(0, i.jsx)("h1", {
-                            className: "logo",
-                            children: window.Config.SiteName
-                        }), (0, i.jsx)("div", {
-                            className: "navi",
-                            children: window.Config.Navi.map((function(e, t) {
-                                return (0, i.jsx)(l, {
-                                    to: e.url,
-                                    text: e.text
-                                }, t)
-                            }))
-                        })]
-                    }), (0, i.jsxs)("div", {
-                        className: "status-top",
-                        children: [(0, i.jsx)("div", {
-                            className: "status-tip",
-                            id: "status-tip"
-                        }), (0, i.jsx)("p", {
-                            className: "status-text",
-                            id: "status-text",
-                            children: "\u7ad9\u70b9\u72b6\u6001\u52a0\u8f7d\u4e2d"
-                        }), (0, i.jsx)("p", {
-                            className: "status-text",
-                            id: "status-down",
-                            children: "\u90e8\u5206\u7ad9\u70b9\u65e0\u6cd5\u8fd0\u884c"
-                        }), (0, i.jsxs)("p", {
-                            className: "status-time",
-                            id: "status-time-up",
-                            children: ["\u4e0a\u6b21\u66f4\u65b0\u4e8e\xa0", (0, i.jsx)("span", {
-                                id: "status-last-time",
-                                children: "00\xa0:\xa000"
-                            }), "\u2003|\u2003\u68c0\u6d4b\u9891\u7387\xa05\xa0\u5206\u949f"]
-                        })]
-                    })]
+       var u = function() {
+    return (0, e.useEffect)(function() {
+        document.title = window.Config.SiteName;
+    }, []), (0, i.jsxs)("div", {
+        id: "header",
+        children: [(0, i.jsxs)("div", {
+            className: "container",
+            children: [(0, i.jsx)("h1", {
+                className: "logo",
+                children: window.Config.SiteName
+            }), (0, i.jsx)("div", {
+                className: "navi",
+                children: window.Config.Navi.map(function(e, t) {
+                    return (0, i.jsx)(l, {
+                        to: e.url,
+                        text: e.text
+                    }, t);
                 })
-            };
+            })]
+        }), (0, i.jsxs)("div", {
+            className: "status-top",
+            children: [(0, i.jsx)("div", {
+                className: "status-tip",
+                id: "status-tip"
+            }), (0, i.jsx)("p", {
+                className: "status-text",
+                id: "status-text",
+                children: "\u7ad9\u70b9\u72b6\u6001\u52a0\u8f7d\u4e2d"
+            }), (0, i.jsx)("p", {
+                className: "status-text",
+                id: "status-down",
+                children: "\u90e8\u5206\u7ad9\u70b9\u65e0\u6cd5\u8fd0\u884c"
+            }), (0, i.jsxs)("p", {
+                className: "status-time",
+                id: "status-time-up",
+                children: ["\u4e0a\u6b21\u66f4\u65b0\u4e8e\xa0", (0, i.jsx)("span", {
+                    id: "status-last-time",
+                    children: getLastUpdateTime() // 假设 getLastUpdateTime 返回 "yyyy-MM-dd HH:mm:ss" 格式的时间字符串
+                }), "\u2003|\u2003\u68c0\u6d4b\u9891\u7387\xa05\xa0\u5206\u949f"]
+            })]
+        })]
+    });
+};
+
+// 假设这是一个返回当前时间的函数，格式为 "yyyy-MM-dd HH:mm:ss"
+function getLastUpdateTime() {
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    const seconds = String(now.getSeconds()).padStart(2, '0');
+    return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
 
         function s(e, t) {
             (null == t || t > e.length) && (t = e.length);
